@@ -11,6 +11,10 @@
 		5695E36B2683605E00891981 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5695E36A2683605E00891981 /* ContentView.swift */; };
 		5695E36D2683605F00891981 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5695E36C2683605F00891981 /* Assets.xcassets */; };
 		5695E3702683605F00891981 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5695E36F2683605F00891981 /* Preview Assets.xcassets */; };
+		5695E37D26836A8100891981 /* KNN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5695E37C26836A8100891981 /* KNN.swift */; };
+		5695E3802684B31100891981 /* KNNModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5695E37F2684B31100891981 /* KNNModel.swift */; };
+		5695E3842684BF1E00891981 /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5695E3832684BF1E00891981 /* Database.swift */; };
+		5695E3892685553700891981 /* Distance.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5695E3882685553700891981 /* Distance.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		5695E36C2683605F00891981 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5695E36F2683605F00891981 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		5695E3712683605F00891981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5695E37C26836A8100891981 /* KNN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KNN.swift; sourceTree = "<group>"; };
+		5695E37F2684B31100891981 /* KNNModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KNNModel.swift; sourceTree = "<group>"; };
+		5695E3832684BF1E00891981 /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		5695E3882685553700891981 /* Distance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Distance.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +60,9 @@
 		5695E3672683605E00891981 /* ML-KNN */ = {
 			isa = PBXGroup;
 			children = (
-				5695E3682683605E00891981 /* ML_KNNApp.swift */,
-				5695E36A2683605E00891981 /* ContentView.swift */,
+				5695E38B2685553C00891981 /* Model */,
+				5695E38E2685566700891981 /* ViewModel */,
+				5695E3902685568B00891981 /* View */,
 				5695E36C2683605F00891981 /* Assets.xcassets */,
 				5695E3712683605F00891981 /* Info.plist */,
 				5695E36E2683605F00891981 /* Preview Content */,
@@ -67,6 +76,33 @@
 				5695E36F2683605F00891981 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		5695E38B2685553C00891981 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5695E37F2684B31100891981 /* KNNModel.swift */,
+				5695E3882685553700891981 /* Distance.swift */,
+				5695E3832684BF1E00891981 /* Database.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5695E38E2685566700891981 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				5695E37C26836A8100891981 /* KNN.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5695E3902685568B00891981 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				5695E36A2683605E00891981 /* ContentView.swift */,
+				5695E3682683605E00891981 /* ML_KNNApp.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +174,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5695E3892685553700891981 /* Distance.swift in Sources */,
+				5695E3842684BF1E00891981 /* Database.swift in Sources */,
+				5695E37D26836A8100891981 /* KNN.swift in Sources */,
+				5695E3802684B31100891981 /* KNNModel.swift in Sources */,
 				5695E36B2683605E00891981 /* ContentView.swift in Sources */,
 				5695E3692683605E00891981 /* ML_KNNApp.swift in Sources */,
 			);
